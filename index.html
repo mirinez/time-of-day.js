@@ -1,0 +1,72 @@
+<!-- index.html — Grußnachricht
+   Míriam Domínguez Martínez
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- ============================================================
+    META & PAGE SETUP
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grußnachricht</title>
+</head>
+<body>
+  <!-- ============================================================
+    BODY
+  -->
+  <!-- Container for the greeting message -->
+  <div id="greeting"></div>
+
+  <!-- ============================================================
+    JAVASCRIPT
+  -->
+  <script>
+
+    /*
+      DOM ELEMENT REFERENCES
+    */
+
+    var greetingDiv = document.getElementById("greeting");  // div where the greeting is displayed
+
+
+    /*
+      GET CURRENT HOUR
+    */
+
+    // Create a Date object with the current date and time
+    var now = new Date();
+
+    // Extract the hour (0–23) from the current time
+    var hour = now.getHours();
+    console.log(now, hour);
+
+
+    /*
+      DETERMINE GREETING
+    */
+
+    // Choose greeting text based on the time of day
+    var greetingText;
+
+    if (hour >= 5 && hour < 12) {
+      greetingText = "Morgen";        // 05:00 – 11:59
+    } else if (hour >= 12 && hour < 18) {
+      greetingText = "Tag";           // 12:00 – 17:59
+    } else {
+      greetingText = "Abend";         // 18:00 – 04:59
+    }
+
+
+    /*
+      RENDER GREETING
+    */
+
+    // Write the greeting into the div
+    // "Guten" is wrapped in <strong> to render it bold
+    greetingDiv.innerHTML = "<strong>Guten</strong> " + greetingText;
+
+  </script>
+</body>
+</html>
