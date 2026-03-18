@@ -1,8 +1,8 @@
-## Grußnachricht – Hausaufgabe
+## Grußnachricht - Hausaufgabe
 **Autorin:** Míriam Domínguez Martínez  
 **Datum:** 18.03.2026  
-**Kurs:** Full Stack Web Development – DBE Academy  
-**Thema:** HTML & JavaScript – Begrüßungsnachricht basierend auf der Tageszeit
+**Kurs:** Full Stack Web Development - DBE Academy  
+**Thema:** HTML & JavaScript - Begrüßungsnachricht basierend auf der Tageszeit
 
 ---
 
